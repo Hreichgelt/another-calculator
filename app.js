@@ -14,32 +14,53 @@ const operator4 = parseInt(argv[4]);
 
 
 // function for addition 
-if (operation === 'add') {
-    console.log(operation + ' is ' + (operator1 + operator2));
+if (operation === '+') {
+    console.log('The answer is ' + (operator1 + operator2));
 }
 
 // function for subtraction 
-if (operator === 'subtract') {
-    console.log(operation + ' is ' + (operator1 - operator2));
+if (operation === '-') {
+    console.log('The answer is ' + (operator1 - operator2));
 }
 
 // function for multiplication 
-if (operator === 'multiply') {
-    console.log(operation + ' is ' + (operator1 - operator2));
+if (operation === '*') {
+    console.log('The answer is ' + (operator1 - operator2));
 }
 
 
 // function for division 
+if (operation === '/') {
+    console.log('The answer is ' + (operator1 / operator2));
+}
 
-
-// function for addition && subtraction
-
-// function for addition && multiplication 
-
-// function for addition && division 
-
-// function for subtration && multiplication
-
-// function for subtraction && division 
+// addition && subtraction
+if (operation === '+-') {
+    console.log('The answer is ' + ((operator1 + operator2) - (operator3 + operator4)));
+} 
+// addition && multiplication 
+if (operation === '+*') {
+    console.log('The answer is ' + ((operator1 + operator2) * (operator3 + operator4)));
+}
+// addition && division 
+if (operation === '+/'){
+    console.log('the answer is ' + ((operator1 + operator2) / (operator3 + operator4)));
+}
+// subtration && multiplication
+if (operation === '-*'){
+    console.log('The answer is ' + ((operator1 - operator2) * (operator3 - operator4)));
+}
+// subtraction && division 
+if (operation === '-/'){
+    console.log('The answer is ' + ((operator1 - operator2) / (operator3 - operator4)));
+}
 
 // division && Multiplication 
+
+// All together now
+
+// Clear
+
+// thoughts: 
+// switching to for loops? operator array = ['+', '-', '*', '/'];
+// Switching to switch case? 
